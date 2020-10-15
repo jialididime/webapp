@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body style="background-color: darkseagreen;">
+    <div id="app">
+        {{ message }}
+
+        <ul id="example-1">
+            <li v-for="book in books" :key="book.message">
+                {{ book.name }}
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!',
+                books: [
+                    { name: 'Harry Potter' },
+                    { name: 'War And Peace' }
+                ]
+            },
+
+        })
+    </script>
+</body>
+
+</html>
