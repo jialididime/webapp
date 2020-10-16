@@ -23,4 +23,8 @@ curl localhost:8080
 deno run --allow-net --allow-read a.js
 ## database
 > 持久化数据 保存browser浏览器用户需要的数据
+-client html页面 用户点击 发起http请求 
+-server层api 响应client端用户请求 （通过deno 三方库 实现mysql使用）
+-linux系统层  安装mysql服务 创建用户 创建表 插入数据
+-
 
